@@ -5,7 +5,7 @@ import sqlite3
 
 conn = sqlite3.connect('github.db')
 
-SEARCHSET="Z0123456789" #"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+SEARCHSET="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 PER_PAGE=100
 url="https://api.github.com/search/repositories?q={0}&sort=stars&order=desc&per_page={1}&page={2}"
 
